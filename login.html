@@ -1,0 +1,43 @@
+<!--Final Year Web-Based Project: login.html/(Release) Coded by ara16-->
+<?php
+session_start();
+$userLoggedIn = True;
+?>
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Login - Ceredigion Museum</title>
+		<link href= "stylesheet.css" rel ="stylesheet">
+		<script src="script.js" rel="script"></script>
+	</head>
+
+	<body>
+		<div class="parallax">
+		<!---This is the fixed header--->
+		<div class="fixed-header">
+			<div class="topnav">
+				<img src="images/Museum Logo.PNG" onclick="window.location.href='riversdale.php';" class="logo">
+				<a class="active" href="login.html"><b>Login</a>
+				<a href="game.php"><b>Riversdale Game</a>
+				<a href="riversdale.php"><b>Riversdale Ship</a>
+			</div>
+		</div>
+		<!---This is the Container Form--->
+		<div class="container">
+			<!---This is the title--->
+			<h2 class="title">Login</h2>
+			<br>
+			<form action="login.php" method="post">
+				<!---This is the Email & Password fields--->
+				<label class="email-title">Email:</label><br>
+				<input type="text" class="form-control" name="email" placeholder="Enter Email" required><br>
+				<label class="password-title">Password:</label><br>
+				<input type="password" class="form-control" name="password" placeholder="Enter Password" required><br>					
+				<!---This is the Submit button--->
+				<input type="submit" class="SU-btn" value="Submit">
+			</form> 
+		</div>
+	</body>
+</html>
